@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-_85*az!*nz=x4vkuxb&vu*^#mqy(i+x7u0i+vd!063t7l)jb@y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["43.201.124.41", "itda.shop"]
 
 
 # Application definition
@@ -126,6 +126,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [BASE_DIR / 'main/static']  # static 폴더 경로 설정
 
 # Default primary key field type

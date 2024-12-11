@@ -1,0 +1,92 @@
+/* all_products.css */
+
+/* 전체 페이지 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* 상단 바 스타일 */
+.top-bar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.top-bar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.top-bar li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.top-bar li a:hover {
+    text-decoration: underline;
+}
+
+/* 상품 목록 */
+.container {
+    padding: 20px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 auto;
+}
+
+.product-item h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.product-item p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.product-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.product-item a:hover {
+    background-color: #555;
+}
+
+/* 무료 나눔 스타일 */
+.product-item p {
+    color: green;
+}
