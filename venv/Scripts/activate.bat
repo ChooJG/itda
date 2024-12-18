@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\three\OneDrive\바탕 화면\project\trade\venv
+set VIRTUAL_ENV=C:\Users\cndow\PycharmProjects\trade\venv
 
 if not defined PROMPT set PROMPT=$P$G
 
