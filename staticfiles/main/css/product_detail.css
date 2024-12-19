@@ -1,0 +1,178 @@
+/* 기본 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* 상단 바 스타일 */
+.top-bar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.top-bar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.top-bar .spacer {
+    flex: 1;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.top-bar a:hover {
+    background-color: #555;
+    border-radius: 4px;
+    transform: scale(1.1);
+}
+
+/* 페이지 컨테이너 */
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 80px; /* 상단 바 높이 고려 */
+}
+
+/* 상품 제목과 사진 */
+.product-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.product-image {
+    flex: 1;
+    max-width: 380px; /* 사진 컨테이너 최대 너비를 조금 줄임 */
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 약간의 그림자 추가 */
+}
+
+/* 상품 정보 병렬 배치 */
+.product-info {
+    flex: 2;
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* 설명 박스 */
+.product-description-box {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 150px; /* 기본 높이를 설정하여 내용이 적어도 박스 크기 유지 */
+    word-wrap: break-word; /* 긴 단어 줄바꿈 */
+}
+
+/* 학교/학년/과목 박스 */
+.product-meta-box {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 150px; /* 기본 높이를 설정하여 과목 내용 줄바꿈 방지 */
+    word-wrap: break-word; /* 긴 단어 줄바꿈 */
+    width: 300px; /* 넉넉한 여유 공간을 위한 기본 가로폭 설정 */
+}
+
+/* 상품 정보 병렬 배치 */
+.product-info {
+    flex: 2;
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* 설명 박스 */
+.product-description-box {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 학교/학년/과목 박스 */
+.product-meta-box {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-description-box p,
+.product-meta-box p {
+    margin: 10px 0;
+}
+
+/* 댓글 */
+.comments ul {
+    list-style: none;
+    padding: 0;
+}
+
+.comments li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form textarea {
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+
+.comment-form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.comment-form button:hover {
+    background-color: #555;
+}
