@@ -135,8 +135,5 @@ STATICFILES_DIRS = [BASE_DIR / 'main/static']  # static 폴더 경로 설정
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# 추가적인 설정들
-# 로그인 URL 지정 (관리자 로그인 경로)
-LOGIN_URL = '/admin/login/' 
 
 # 관리자를 위한 URL 설정을 추가할 수 있습니다.

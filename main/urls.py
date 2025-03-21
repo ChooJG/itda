@@ -7,9 +7,6 @@ urlpatterns = [
     path('product/<int:product_id>/', views.product_detail, name='product_detail'),  # 상품 상세 페이지
     path('all-products/', views.all_products, name='all_products'),  # 전체 상품 페이지
     path('popular-products/', views.popular_products, name='popular_products'),  # 인기 상품 페이지
-    path('login/', views.login_view, name='login'),
-    path('signup/', views.signup_view, name='signup'),
-    path('logout/', views.logout_view, name='logout'),  # 로그아웃 URL
 ]
 
 
