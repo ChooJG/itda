@@ -33,7 +33,13 @@ SECRET_KEY = 'django-insecure-_85*az!*nz=x4vkuxb&vu*^#mqy(i+x7u0i+vd!063t7l)jb@y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['43.201.124.41', 'itda.shop','127.0.0.1:8000', '127.0.0.1']
+ALLOWED_HOSTS = [
+    '43.201.124.41',
+    'itda.shop',
+    '127.0.0.1:8000',
+    '127.0.0.1',
+    'weak-delinda-seoultech-e32efeb7.koyeb.app'
+]
 
 
 # Application definition
