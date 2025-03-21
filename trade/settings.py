@@ -10,8 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
-from pathlib import Path
 import os
+from pathlib import Path
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -140,6 +141,3 @@ STATICFILES_DIRS = [BASE_DIR / 'main/static']  # static 폴더 경로 설정
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
-# 관리자를 위한 URL 설정을 추가할 수 있습니다.
